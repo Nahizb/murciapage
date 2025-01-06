@@ -1,0 +1,385 @@
+/* Contenedor principal */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 0;
+  margin-top: 70px;
+ 
+}
+
+
+/* Tamaño uniforme para todas las secciones */
+.section {
+  width: 100%;
+  height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Primera sección */
+.top-section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: calc(100vh - 70px);
+}
+
+.main-title {
+  font-size: 3rem;
+  color: #ffffffd9;
+  font-family: "Metal Mania", Sans-serif;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  margin-bottom: 20px;
+  z-index: 2;
+  position: relative;
+}
+
+/* Contenedor para la imagen */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  z-index: 1;
+  position: relative;
+}
+
+.top-image {
+  max-width: 70%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+/* Caja de eventos */
+/* Caja de eventos */
+.event-box {
+  background-color:#333333;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  border: 2px solid #6c757d;  /* Border gris */
+  width: 100%; /* Hacer la caja más larga (ajustable a toda la pantalla) */
+  max-width: 400px; /* Límite máximo de tamaño */
+  margin: 0 auto; /* Centrar la caja */
+  color: white;
+}
+
+/* Estilo del botón "Ver todos los eventos" */
+.btn-yellow {
+  background-color: #ffc107; /* Amarillo */
+  border: none;
+  padding: 15px 30px;  /* Más grande */
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: background-color 0.3s, transform 0.3s; /* Efectos suaves */
+}
+
+.btn-yellow:hover {
+  background-color: #e0a800; /* Amarillo más oscuro */
+  transform: translateY(-3px); /* Efecto de elevación al pasar el mouse */
+}
+
+.btn-yellow:active {
+  background-color: #d39e00; /* Color cuando se hace click */
+  transform: translateY(1px); /* Efecto de depresión al hacer click */
+}
+
+
+/* Segunda sección - LA SALA */
+.middle-section {
+  background-color: #000; /* Fondo negro */
+  color: white; /* Texto blanco */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.section-content {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.text-content {
+  flex: 1;
+  text-align: left;
+  font-family: "Metal Mania", Sans-serif;
+}
+
+.text-content h2 {
+  color: #FFFFFFD9;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.text-content p {
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.carousel-container {
+  flex: 1;
+}
+
+.carousel img {
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Tercera sección - Bienvenidos a nuestro evento */
+.bottom-section {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.text-content {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+}
+
+.text-content h2 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.text-content p {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.image-content {
+  flex: 1;
+  text-align: center;
+}
+
+.event-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Cuarta sección */
+.fourth-section {
+  background-color: #000;
+  padding: 60px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.fourth-section h2 {
+  color: #FFD700;
+  font-size: 2.5rem;
+  font-family: "Metal Mania", Sans-serif;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  margin: 0;
+}
+
+/* Quinta sección */
+.fifth-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #000;
+}
+
+.fifth-section h2 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-family: "Metal Mania", Sans-serif;
+  
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+  
+  
+}
+
+/* Tarjeta con fondo gris */
+.card {
+  background-color: #515151;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+/* Estilo para la imagen de la tarjeta */
+.card-image {
+  width: 100px;
+  height: 100px;
+  background-color: #515151;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Contenido de la tarjeta */
+.card-content {
+  padding: 10px;
+  background-color: grey;
+  color: white;
+}
+
+/* Estilo para el nombre del usuario */
+.user-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  
+}
+
+/* Estilo para la fecha del comentario */
+.comment-date {
+  font-size: 1rem;
+  color: #dcdcdc;
+  margin-bottom: 10px;
+}
+
+/* Estilo para el comentario */
+.comment {
+  font-size: 1.2rem;
+  color: white;
+  line-height: 1.5;
+  background-color: #515151;
+
+}
+
+/* Nueva sección para la línea separadora y texto centrado */
+.fifth-section .separator {
+  width: 100%;
+  height: 1px;
+  background-color: #515151;
+  margin: 40px 0;
+}
+
+.fifth-section .final-text {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+/* Texto debajo de las tarjetas */
+.text-below-cards {
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding: 40px 20px;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+.text-below-cards h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.text-below-cards p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Estilo para el botón de más información */
+.btn-more-info {
+  background-color: #ffc107;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-more-info:hover {
+  background-color: #e0a800;
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 768px) {
+  .top-image {
+    max-width: 90%;
+  }
+
+  .section-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .carousel-container {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .content-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-content {
+    margin-top: 20px;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,130 @@
+/* Estilos generales del navbar */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo negro transparente */
+  padding: 10px;
+}
+
+/* Contenedor principal del navbar */
+.container-fluid {
+  display: flex;
+  justify-content: space-between; /* Distribuir los elementos: centro y derecha */
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+/* Contenedor para el logo y los enlaces centrados */
+.nav-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1; /* Ocupa el espacio disponible para centrar el contenido */
+  gap: 20px; /* Espacio entre el logo y los enlaces */
+}
+
+/* Logo */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.navbar-logo {
+  height: 40px;
+  width: auto;
+}
+
+/* Navegación */
+.navbar-collapse {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Botón de cambio de idioma */
+.language-accessibility {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Espacio entre las pestañas */
+}
+
+/* Pestaña de idioma */
+.lang-dropdown {
+  position: relative;
+}
+
+.lang-button {
+  background: transparent;
+  border: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.flag-icon {
+  width: 24px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.lang-text {
+  margin-right: 4px;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  list-style: none;
+  padding: 5px 0;
+  margin: 0;
+  min-width: 120px;
+}
+
+.lang-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-item {
+  background: transparent;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  width: 100%;
+  text-align: left;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Pestaña de herramientas de accesibilidad */
+.accessibility-button {
+  background: transparent;
+  border: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.accessibility-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.accessibility-text {
+  font-size: 14px;
+}

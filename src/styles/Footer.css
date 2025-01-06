@@ -1,0 +1,10 @@
+/* Footer.css */
+
+
+.btn-hover:hover {
+    background-color: #343a40; /* Oscurece ligeramente el botón */
+    color: #ffffff; /* Mantiene el texto blanco */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño del botón */
+    transition: all 0.2s ease-in-out; /* Suaviza el efecto */
+  }
+  
