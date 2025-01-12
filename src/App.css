@@ -8,10 +8,26 @@
   pointer-events: none;
 }
 
-/* Estilos de entrada conciertos */
-.concerts-section {
+/* Estilos para Discordia */
+.discordia-section {
   text-align: center;
   padding: 50px 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Estilos para Concerts */
+.concerts-section {
+  .concerts-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Esto asegura que la sección tenga altura */
+  }
+  
 }
 
 /* Título de la sección */
@@ -21,6 +37,7 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #C0BFA5;
+  text-align: center;
 }
 
 /* Estilo para el rectángulo con mensaje */
@@ -35,6 +52,7 @@
   line-height: 1.2em;
   max-width: 800px;
   border-radius: 10px;
+  text-align: center;
 }
 
 .no-events1 {
@@ -48,8 +66,8 @@
   line-height: 1.2em;
   max-width: 800px;
   border-radius: 10px;
+  text-align: center;
 }
-
 
 /* Estilo para la flecha hacia abajo */
 .down-arrow {
@@ -57,11 +75,10 @@
   cursor: pointer;
   margin-bottom: 30px;
   color: white;
+  text-align: center;
 }
 
-
 .cards-container {
- 
   display: flex;
   flex-wrap: wrap; /* Permite que las tarjetas se acomoden en filas si no caben */
   gap: 20px;       /* Espaciado entre tarjetas */
@@ -69,20 +86,15 @@
   padding: 20px;   /* Espaciado interno */
 }
 
-
 /* Nueva sección con tarjetas horizontales */
 .cards-section {
-background-color: black;
   display: flex;
   flex-direction: column;
   gap: 30px;
   align-items: center;
   width: 100%;
   height: 100%;
- 
 }
-
-
 
 /* Estilo de cada tarjeta */
 .card {
@@ -95,9 +107,7 @@ background-color: black;
   text-align: center;     /* Centra el contenido */
 }
 
-
 .card-image {
-  
   width: 100%;      /* Ocupa todo el ancho de la tarjeta */
   height: 150px;    /* Altura fija para que las imágenes sean uniformes */
   overflow: hidden; /* Asegura que nada se salga del contenedor */
@@ -109,13 +119,11 @@ background-color: black;
   object-fit: cover; /* Escala la imagen sin deformarla, recortando si es necesario */
 }
 
-
 .card-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
-  
 }
 
 /* Contenido de la tarjeta */
@@ -149,9 +157,6 @@ background-color: black;
   font-size: 1rem;
   line-height: 1.5;
 }
-
-
-
 
 /* Media query para pantallas pequeñas */
 @media (max-width: 768px) {

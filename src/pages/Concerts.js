@@ -4,6 +4,7 @@ import tarjeta2 from '../styles/images/cuadro2.jpg';
 import tarjeta3 from '../styles/images/cuadro3.jpg';
 import tarjeta4 from '../styles/images/cuadro4.jpg';
 import tarjeta5 from '../styles/images/cuadro5.jpg';
+import fondo from '../styles/images/fondo.png';
 
 function Concerts() {
   const scrollToBottom = () => {
@@ -14,7 +15,7 @@ function Concerts() {
   };
 
   return (
-    <div className="concerts-section">
+    <div className="concerts-section" style={{ backgroundImage: `url(${fondo})` }}>
       <h1 className="concerts-title">Próximos Eventos</h1>
 
       <div className="no-events">No hay más eventos próximos</div>
@@ -25,14 +26,12 @@ function Concerts() {
 
       <div className="no-events1">Eventos pasados</div>
 
-
-
       <div className="cards-section">
         {[tarjeta1, tarjeta2, tarjeta3, tarjeta4, tarjeta5].map((img, index) => (
           <div className="card card-reverse" key={index}>
             <div className="card-content">
               <h3 className="card-title">El Año Del Caiman + Stillblind + Astter {index + 1}</h3>
-              <p className="card-date">30 Nov sábado  {index + 1}</p>
+              <p className="card-date">30 Nov sábado {index + 1}</p>
               <p className="card-description">Descripción del evento {index + 1}</p>
             </div>
             <div className="card-image">
@@ -78,4 +77,3 @@ function Concerts() {
 }
 
 export default Concerts;
-
